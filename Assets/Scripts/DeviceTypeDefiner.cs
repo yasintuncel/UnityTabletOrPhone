@@ -23,12 +23,12 @@ namespace Scripts
     bool deviceIsIpad = UnityEngine.iOS.Device.generation.ToString().Contains("iPad");
             if (deviceIsIpad)
             {
-                return ENUM_Device_Type.Tablet;
+                return DeviceTypes.TABLET;
             }
             bool deviceIsIphone = UnityEngine.iOS.Device.generation.ToString().Contains("iPhone");
             if (deviceIsIphone)
             {
-                return ENUM_Device_Type.Phone;
+                 return DeviceTypes.PHONE;
             }
 #elif UNITY_ANDROID
             float aspectRatio = Mathf.Max(Screen.width, Screen.height) / Mathf.Min(Screen.width, Screen.height);
