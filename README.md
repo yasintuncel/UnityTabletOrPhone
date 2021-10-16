@@ -1,2 +1,2 @@
 # UnityTabletOrPhone
-switch scene for device tablet or phone
+define scenes for device tablet or phone
